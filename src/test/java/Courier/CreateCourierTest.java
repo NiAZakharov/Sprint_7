@@ -28,7 +28,6 @@ public class CreateCourierTest extends BaseScenario {
     @Test
     @DisplayName("Успешное создание курьера")
     @Description("Создание курьера и проверка ответа метода")
-    @Step("степ бай степ по ты тоже не ослеп")
     public void createSuccessfulCourierTest() {
 
         Courier courier = Courier
@@ -38,16 +37,8 @@ public class CreateCourierTest extends BaseScenario {
                 .password(faker.name().username())
                 .build();
 
-        Response response = given()
-                .body(courier)
-                .when()
-                .post(API_PATH);
-
-        log.info(response.prettyPrint());
-        response.then()
-                .assertThat().body("ok", equalTo(true))
-                .and()
-                .statusCode(201);
+        Response response = createRequest(courier);
+        checkSuccessfulResponse(response);
     }
 
     @Test
@@ -61,16 +52,8 @@ public class CreateCourierTest extends BaseScenario {
                 .password(faker.name().username())
                 .build();
 
-        Response response = given()
-                .body(courier)
-                .when()
-                .post(API_PATH);
-
-        log.info(response.prettyPrint());
-        response.then()
-                .assertThat().body("ok", equalTo(true))
-                .and()
-                .statusCode(201);
+        Response response = createRequest(courier);
+        checkSuccessfulResponse(response);
     }
 
     @Test
@@ -84,16 +67,8 @@ public class CreateCourierTest extends BaseScenario {
                 .firstName(faker.name().firstName())
                 .build();
 
-        Response response = given()
-                .body(courier)
-                .when()
-                .post(API_PATH);
-
-        log.info(response.prettyPrint());
-        response.then()
-                .assertThat().body("message", equalTo(FAIL_MESSAGE))
-                .and()
-                .statusCode(400);
+        Response response = createRequest(courier);
+        checkFailedResponse(response);
     }
 
     @Test
@@ -107,16 +82,8 @@ public class CreateCourierTest extends BaseScenario {
                 .password(faker.name().username())
                 .build();
 
-        Response response = given()
-                .body(courier)
-                .when()
-                .post(API_PATH);
-
-        log.info(response.prettyPrint());
-        response.then()
-                .assertThat().body("message", equalTo(FAIL_MESSAGE))
-                .and()
-                .statusCode(400);
+        Response response = createRequest(courier);
+        checkFailedResponse(response);
     }
 
     @Test
@@ -131,21 +98,43 @@ public class CreateCourierTest extends BaseScenario {
                 .password(faker.name().username())
                 .build();
 
-        Response response = given()
+        createRequest(courier);
+        Response response = createRequest(courier);
+        checkDopplerResponse(response);
+    }
+
+    @Step(value = "Вызов метода создания курьера")
+    public Response createRequest(Courier courier) {
+        return given()
                 .body(courier)
                 .when()
                 .post(API_PATH);
+    }
 
-        Response response2 = given()
-                .body(courier)
-                .when()
-                .post(API_PATH);
+    @Step(value = "Проверка положительного ответа")
+    public void checkSuccessfulResponse(Response response) {
+        log.info(response.prettyPrint());
+        response.then()
+                .assertThat().body("ok", equalTo(true))
+                .and()
+                .statusCode(201);
+    }
 
-        log.info(response2.prettyPrint());
-        response2.then()
+    @Step(value = "Проверка негативного ответа")
+    public void checkFailedResponse(Response response) {
+        log.info(response.prettyPrint());
+        response.then()
+                .assertThat().body("message", equalTo(FAIL_MESSAGE))
+                .and()
+                .statusCode(400);
+    }
+
+    @Step(value = "Проверка ответа при создании дубля")
+    public void checkDopplerResponse(Response response) {
+        log.info(response.prettyPrint());
+        response.then()
                 .assertThat().body("message", equalTo(CONFLICT_MESSAGE))
                 .and()
                 .statusCode(409);
     }
-
 }
