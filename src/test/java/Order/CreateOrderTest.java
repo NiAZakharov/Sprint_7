@@ -40,7 +40,6 @@ public class CreateOrderTest extends BaseScenario {
                 .firstName(faker.name().firstName())
                 .lastName(faker.name().lastName())
                 .address(faker.address().streetAddress())
-//                .metroStation(faker.number().numberBetween(1,10))
                 .metroStation(faker.random().toString())
                 .phone(faker.phoneNumber().phoneNumber())
                 .rentTime(faker.number().numberBetween(1,30))

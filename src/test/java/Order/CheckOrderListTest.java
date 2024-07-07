@@ -120,6 +120,7 @@ public class CheckOrderListTest extends BaseScenario {
 
     @Step(value = "Проверка обязательных ключей")
     public void checkOrderReqContent(Response response) {
+        logResponseToAllure(response);
         response.then()
                 .body("orders[0].id", Matchers.any(Integer.class))
                 .body("orders[0].track", Matchers.any(Integer.class))

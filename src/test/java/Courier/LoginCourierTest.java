@@ -2,6 +2,7 @@ package Courier;
 
 import com.github.javafaker.Faker;
 import dto.Courier;
+import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
@@ -172,6 +173,7 @@ public class LoginCourierTest extends BaseScenario {
     @Step(value = "Проверка некорректного запроса 400")
     public void checkErrorResponse (Response response) {
         log.info(response.prettyPrint());
+        logResponseToAllure(response);
         response.then()
                 .assertThat().body("message", equalTo(INSUFFICIENT_DATA_MESSAGE))
                 .and()
@@ -181,6 +183,7 @@ public class LoginCourierTest extends BaseScenario {
     @Step(value = "Проверка некорректного запроса 404")
     public void checkNotFoundResponse (Response response) {
         log.info(response.prettyPrint());
+        logResponseToAllure(response);
         response.then()
                 .assertThat().body("message", equalTo(NOT_FOUND_MESSAGE))
                 .and()
@@ -190,11 +193,11 @@ public class LoginCourierTest extends BaseScenario {
     @Step(value = "Проверка успешного запроса")
     public void checkSuccessResponse (Response response) {
         log.info(response.prettyPrint());
+        logResponseToAllure(response);
         response.then()
                 .assertThat().body("id", Matchers.any(Integer.class))
                 .and()
                 .statusCode(SC_OK);
     }
-
 
 }

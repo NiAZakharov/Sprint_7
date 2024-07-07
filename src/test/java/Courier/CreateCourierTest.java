@@ -109,6 +109,7 @@ public class CreateCourierTest extends BaseScenario {
     @Step(value = "Проверка положительного ответа")
     public void checkSuccessfulResponse(Response response) {
         log.info(response.prettyPrint());
+        logResponseToAllure(response);
         response.then()
                 .assertThat().body("ok", equalTo(true))
                 .and()
@@ -118,6 +119,7 @@ public class CreateCourierTest extends BaseScenario {
     @Step(value = "Проверка негативного ответа")
     public void checkFailedResponse(Response response) {
         log.info(response.prettyPrint());
+        logResponseToAllure(response);
         response.then()
                 .assertThat().body("message", equalTo(FAIL_MESSAGE))
                 .and()
@@ -127,6 +129,7 @@ public class CreateCourierTest extends BaseScenario {
     @Step(value = "Проверка ответа при создании дубля")
     public void checkDopplerResponse(Response response) {
         log.info(response.prettyPrint());
+        logResponseToAllure(response);
         response.then()
                 .assertThat().body("message", equalTo(CONFLICT_MESSAGE))
                 .and()

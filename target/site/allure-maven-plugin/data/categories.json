@@ -7,26 +7,26 @@
       "name" : "Expected response body to be verified as JSON, HTML or XML but no content-type was defined in the response.\nTry registering a default parser using:\n   RestAssured.defaultParser(<parser type>);\nContent was:\nService unavailable\n",
       "children" : [ {
         "name" : "Авторизоваться без пароля",
-        "uid" : "825b477c27356147",
+        "uid" : "80742611b53c86d8",
         "parentUid" : "367a3afb637801ae2f7fcf9ac69ad976",
         "status" : "broken",
         "time" : {
-          "start" : 1720382671143,
-          "stop" : 1720382731970,
-          "duration" : 60827
+          "start" : 1720390580038,
+          "stop" : 1720390640840,
+          "duration" : 60802
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Авторизоваться без пароля",
-        "uid" : "15b200eae71b54a8",
+        "uid" : "4480e5759bc966f8",
         "parentUid" : "367a3afb637801ae2f7fcf9ac69ad976",
         "status" : "broken",
         "time" : {
-          "start" : 1720382734451,
-          "stop" : 1720382795281,
-          "duration" : 60830
+          "start" : 1720390643303,
+          "stop" : 1720390704233,
+          "duration" : 60930
         },
         "flaky" : false,
         "newFailed" : false,

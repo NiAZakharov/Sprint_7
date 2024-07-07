@@ -2,6 +2,7 @@ package util;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import io.qameta.allure.Allure;
 import io.qameta.allure.Step;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -15,12 +16,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static io.restassured.RestAssured.given;
+import static org.apache.http.HttpStatus.SC_BAD_REQUEST;
+import static org.hamcrest.Matchers.equalTo;
 
 public class BaseScenario {
 
     private static final ConnectionProperty CONNECTION_PROPERTIES = PropertyLoader.loadProperties();
-    private final ObjectMapper objectMapper = new ObjectMapper();
+    private final static String INSUFFICIENT_DATA_MESSAGE = "Недостаточно данных для входа";
     protected static RequestSpecification requestSpecification;
+    private final ObjectMapper objectMapper = new ObjectMapper();
 
     @BeforeAll
     public static void setUp() {
@@ -49,9 +53,13 @@ public class BaseScenario {
                 .given()
                 .baseUri(CONNECTION_PROPERTIES.getHost())
                 .contentType(ContentType.JSON).accept(ContentType.JSON)
+                .filter(new AllureRestAssuredFilter())
                 .log().all();
 
         RestAssured.requestSpecification = requestSpecification;
+
+
+
     }
 
 
@@ -81,5 +89,11 @@ public class BaseScenario {
         return given()
                 .when()
                 .get(urlPath);
+    }
+    public void logResponseToAllure(Response response) {
+        //Добавил вручную, т.к. автоматически это почему то не срабатывает. Думаю из за ассерта в цепочке
+        Allure.addAttachment("Response Status Code", String.valueOf(response.getStatusCode()));
+        Allure.addAttachment("Response Headers", response.getHeaders().toString());
+        Allure.addAttachment("Response Body", response.getBody().asPrettyString());
     }
 }

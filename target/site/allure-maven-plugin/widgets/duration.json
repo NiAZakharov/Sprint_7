@@ -1,210 +1,210 @@
 [ {
-  "uid" : "34d3f2b4e7404fcf",
-  "name" : "Получение списка из 2-х заказов",
-  "time" : {
-    "start" : 1720382843423,
-    "stop" : 1720382866026,
-    "duration" : 22603
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "a9c67274d4bf053a",
-  "name" : "Не успешное создание курьера",
-  "time" : {
-    "start" : 1720382669979,
-    "stop" : 1720382670304,
-    "duration" : 325
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "825b477c27356147",
-  "name" : "Авторизоваться без пароля",
-  "time" : {
-    "start" : 1720382671143,
-    "stop" : 1720382731970,
-    "duration" : 60827
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "594124e0bd3f65db",
-  "name" : "Успешное создание курьера",
-  "time" : {
-    "start" : 1720382669448,
-    "stop" : 1720382669975,
-    "duration" : 527
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "36d9c064747ca172",
-  "name" : "Попытка авторизоваться не зарегистрированным курьером",
-  "time" : {
-    "start" : 1720382670707,
-    "stop" : 1720382671139,
-    "duration" : 432
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "58ad87365a3d8dc1",
-  "name" : "Создание заказа 1 с цветом GREY",
-  "time" : {
-    "start" : 1720382866634,
-    "stop" : 1720382867133,
-    "duration" : 499
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "7c3e681ceecc72b4",
-  "name" : "Создание заказа 3 с цветом GREY, BLACK",
-  "time" : {
-    "start" : 1720382867506,
-    "stop" : 1720382867909,
-    "duration" : 403
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "15b200eae71b54a8",
-  "name" : "Авторизоваться без пароля",
-  "time" : {
-    "start" : 1720382734451,
-    "stop" : 1720382795281,
-    "duration" : 60830
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "379193d505fddf4b",
-  "name" : "Создание заказа 4 с цветом ",
-  "time" : {
-    "start" : 1720382867913,
-    "stop" : 1720382868346,
-    "duration" : 433
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "84bc402f07855144",
+  "uid" : "fac0b8c04c12ca93",
   "name" : "Получение списка заказов",
   "time" : {
-    "start" : 1720382818836,
-    "stop" : 1720382843420,
-    "duration" : 24584
+    "start" : 1720390730042,
+    "stop" : 1720390751404,
+    "duration" : 21362
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "c4aa03a3ff6bf8a6",
-  "name" : "Попытка создать существующего курьера",
-  "time" : {
-    "start" : 1720382665944,
-    "stop" : 1720382668973,
-    "duration" : 3029
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "5c36d60decbb9fee",
-  "name" : "Авторизация курьером",
-  "time" : {
-    "start" : 1720382731982,
-    "stop" : 1720382732783,
-    "duration" : 801
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b9bb9eebb59f6b4d",
+  "uid" : "6a18d9788c339fc5",
   "name" : "Создание заказа 2 с цветом BLACK",
   "time" : {
-    "start" : 1720382867136,
-    "stop" : 1720382867503,
-    "duration" : 367
+    "start" : 1720390777009,
+    "stop" : 1720390777423,
+    "duration" : 414
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "995cacac16f4dc35",
-  "name" : "Авторизоваться без логина",
-  "time" : {
-    "start" : 1720382795285,
-    "stop" : 1720382796074,
-    "duration" : 789
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "7662f3184da133cb",
-  "name" : "Получение заказов несуществующего курьера",
-  "time" : {
-    "start" : 1720382818478,
-    "stop" : 1720382818832,
-    "duration" : 354
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "8ea1fe886225afa3",
-  "name" : "Авторизоваться без пароля",
-  "time" : {
-    "start" : 1720382732787,
-    "stop" : 1720382733522,
-    "duration" : 735
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "361829a841d0f7c5",
+  "uid" : "28c93f7ac3969f3f",
   "name" : "Успешное создание курьера",
   "time" : {
-    "start" : 1720382670309,
-    "stop" : 1720382670685,
-    "duration" : 376
+    "start" : 1720390579123,
+    "stop" : 1720390579558,
+    "duration" : 435
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "c74b21498dfadfaa",
+  "uid" : "ec00d266be8b3682",
+  "name" : "Создание заказа 3 с цветом GREY, BLACK",
+  "time" : {
+    "start" : 1720390777426,
+    "stop" : 1720390777790,
+    "duration" : 364
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "df1d5d6d32f0c327",
+  "name" : "Попытка авторизоваться не зарегистрированным курьером",
+  "time" : {
+    "start" : 1720390579580,
+    "stop" : 1720390580035,
+    "duration" : 455
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2ab306cb05005c74",
   "name" : "Авторизоваться без пароля",
   "time" : {
-    "start" : 1720382733526,
-    "stop" : 1720382734447,
-    "duration" : 921
+    "start" : 1720390642535,
+    "stop" : 1720390643300,
+    "duration" : 765
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "3c58cc92950828de",
+  "uid" : "d64d9407ed33e47b",
+  "name" : "Авторизоваться без логина",
+  "time" : {
+    "start" : 1720390704238,
+    "stop" : 1720390705128,
+    "duration" : 890
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ce0a863f126bbed6",
   "name" : "Не успешное создание курьера",
   "time" : {
-    "start" : 1720382669007,
-    "stop" : 1720382669443,
-    "duration" : 436
+    "start" : 1720390578677,
+    "stop" : 1720390579118,
+    "duration" : 441
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "de09a81f065f9415",
-  "name" : "Получение заказов по станции",
+  "uid" : "59712813b042b76a",
+  "name" : "Получение заказов несуществующего курьера",
   "time" : {
-    "start" : 1720382796082,
-    "stop" : 1720382818475,
-    "duration" : 22393
+    "start" : 1720390729616,
+    "stop" : 1720390730038,
+    "duration" : 422
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "9536974b3f843be3",
+  "uid" : "55641243f20b0ce9",
+  "name" : "Попытка создать существующего курьера",
+  "time" : {
+    "start" : 1720390573925,
+    "stop" : 1720390577777,
+    "duration" : 3852
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e3e169d0d3b8d909",
+  "name" : "Получение списка из 2-х заказов",
+  "time" : {
+    "start" : 1720390751409,
+    "stop" : 1720390775829,
+    "duration" : 24420
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "80742611b53c86d8",
+  "name" : "Авторизоваться без пароля",
+  "time" : {
+    "start" : 1720390580038,
+    "stop" : 1720390640840,
+    "duration" : 60802
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "4480e5759bc966f8",
+  "name" : "Авторизоваться без пароля",
+  "time" : {
+    "start" : 1720390643303,
+    "stop" : 1720390704233,
+    "duration" : 60930
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "1e7d399aa90d7226",
   "name" : "Получение заказов для курьера",
   "time" : {
-    "start" : 1720382866031,
-    "stop" : 1720382866606,
-    "duration" : 575
+    "start" : 1720390775836,
+    "stop" : 1720390776396,
+    "duration" : 560
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7b68b10ab1bf5a7a",
+  "name" : "Не успешное создание курьера",
+  "time" : {
+    "start" : 1720390577815,
+    "stop" : 1720390578295,
+    "duration" : 480
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7e3617622d942b41",
+  "name" : "Авторизоваться без пароля",
+  "time" : {
+    "start" : 1720390641760,
+    "stop" : 1720390642531,
+    "duration" : 771
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d4e143328b845e96",
+  "name" : "Авторизация курьером",
+  "time" : {
+    "start" : 1720390640852,
+    "stop" : 1720390641750,
+    "duration" : 898
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8e9de045f5b378a3",
+  "name" : "Успешное создание курьера",
+  "time" : {
+    "start" : 1720390578300,
+    "stop" : 1720390578672,
+    "duration" : 372
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7706cf38f3c500f1",
+  "name" : "Создание заказа 4 с цветом ",
+  "time" : {
+    "start" : 1720390777793,
+    "stop" : 1720390778193,
+    "duration" : 400
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "201d11ff1fcefaad",
+  "name" : "Создание заказа 1 с цветом GREY",
+  "time" : {
+    "start" : 1720390776427,
+    "stop" : 1720390777005,
+    "duration" : 578
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "770bdf0de77c779e",
+  "name" : "Получение заказов по станции",
+  "time" : {
+    "start" : 1720390705136,
+    "stop" : 1720390729612,
+    "duration" : 24476
   },
   "status" : "passed",
   "severity" : "normal"
