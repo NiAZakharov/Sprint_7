@@ -1,0 +1,165 @@
+{
+  "uid" : "8ea1fe886225afa3",
+  "name" : "Авторизоваться без пароля",
+  "fullName" : "Courier.LoginCourierTest.courierLoginWithoutPassTest",
+  "historyId" : "214fd478fddceb47d535b3c12b895870",
+  "time" : {
+    "start" : 1720382732787,
+    "stop" : 1720382733522,
+    "duration" : 735
+  },
+  "description" : "В качестве пароля передается ключ со значением пустой строки",
+  "descriptionHtml" : "<p>В качестве пароля передается ключ со значением пустой строки</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1720382670703,
+      "stop" : 1720382670704,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "В качестве пароля передается ключ со значением пустой строки",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создание курьера для авторизации",
+      "time" : {
+        "start" : 1720382732790,
+        "stop" : 1720382733193,
+        "duration" : 403
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "promt",
+        "value" : "Создание курьера для авторизации"
+      }, {
+        "name" : "obj",
+        "value" : "Courier(id=null, login=николай.хохлова, password=таисия.виноградов, firstName=null)"
+      }, {
+        "name" : "urlPath",
+        "value" : "api/v1/courier"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Авторизация",
+      "time" : {
+        "start" : 1720382733193,
+        "stop" : 1720382733511,
+        "duration" : 318
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "promt",
+        "value" : "Авторизация"
+      }, {
+        "name" : "obj",
+        "value" : "Courier(id=null, login=николай.хохлова, password=, firstName=null)"
+      }, {
+        "name" : "urlPath",
+        "value" : "api/v1/courier/login"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Проверка некорректного запроса 400",
+      "time" : {
+        "start" : 1720382733511,
+        "stop" : 1720382733522,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "response",
+        "value" : "io.restassured.internal.RestAssuredResponseImpl@486bd746"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1720382796076,
+      "stop" : 1720382796076,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "LAPTOP-0SPD60R3"
+  }, {
+    "name" : "thread",
+    "value" : "16284@LAPTOP-0SPD60R3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "Courier.LoginCourierTest"
+  }, {
+    "name" : "testClass",
+    "value" : "Courier.LoginCourierTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "courierLoginWithoutPassTest"
+  }, {
+    "name" : "suite",
+    "value" : "Логин курьера в системе"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8ea1fe886225afa3.json",
+  "parameterValues" : [ ]
+}

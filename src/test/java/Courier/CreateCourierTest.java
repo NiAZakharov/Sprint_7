@@ -12,11 +12,14 @@ import util.BaseScenario;
 
 import java.util.Locale;
 
-import static io.restassured.RestAssured.given;
+import static org.apache.http.HttpStatus.SC_BAD_REQUEST;
+import static org.apache.http.HttpStatus.SC_CONFLICT;
+import static org.apache.http.HttpStatus.SC_CREATED;
 import static org.hamcrest.Matchers.equalTo;
 
 
 @Slf4j
+@DisplayName("Создание курьера")
 public class CreateCourierTest extends BaseScenario {
 
     private final static String API_PATH = "api/v1/courier";
@@ -37,7 +40,7 @@ public class CreateCourierTest extends BaseScenario {
                 .password(faker.name().username())
                 .build();
 
-        Response response = createRequest(courier);
+        Response response = sendPostRequest("Вызов метода создания курьера",courier, API_PATH);
         checkSuccessfulResponse(response);
     }
 
@@ -52,7 +55,7 @@ public class CreateCourierTest extends BaseScenario {
                 .password(faker.name().username())
                 .build();
 
-        Response response = createRequest(courier);
+        Response response = sendPostRequest("Вызов метода создания курьера",courier, API_PATH);
         checkSuccessfulResponse(response);
     }
 
@@ -67,7 +70,7 @@ public class CreateCourierTest extends BaseScenario {
                 .firstName(faker.name().firstName())
                 .build();
 
-        Response response = createRequest(courier);
+        Response response = sendPostRequest("Вызов метода создания курьера",courier, API_PATH);
         checkFailedResponse(response);
     }
 
@@ -82,7 +85,7 @@ public class CreateCourierTest extends BaseScenario {
                 .password(faker.name().username())
                 .build();
 
-        Response response = createRequest(courier);
+        Response response = sendPostRequest("Вызов метода создания курьера",courier, API_PATH);
         checkFailedResponse(response);
     }
 
@@ -98,17 +101,9 @@ public class CreateCourierTest extends BaseScenario {
                 .password(faker.name().username())
                 .build();
 
-        createRequest(courier);
-        Response response = createRequest(courier);
+        sendPostRequest("Вызов метода создания курьера",courier, API_PATH);
+        Response response = sendPostRequest("Вызов метода создания курьера",courier, API_PATH);
         checkDopplerResponse(response);
-    }
-
-    @Step(value = "Вызов метода создания курьера")
-    public Response createRequest(Courier courier) {
-        return given()
-                .body(courier)
-                .when()
-                .post(API_PATH);
     }
 
     @Step(value = "Проверка положительного ответа")
@@ -117,7 +112,7 @@ public class CreateCourierTest extends BaseScenario {
         response.then()
                 .assertThat().body("ok", equalTo(true))
                 .and()
-                .statusCode(201);
+                .statusCode(SC_CREATED);
     }
 
     @Step(value = "Проверка негативного ответа")
@@ -126,7 +121,7 @@ public class CreateCourierTest extends BaseScenario {
         response.then()
                 .assertThat().body("message", equalTo(FAIL_MESSAGE))
                 .and()
-                .statusCode(400);
+                .statusCode(SC_BAD_REQUEST);
     }
 
     @Step(value = "Проверка ответа при создании дубля")
@@ -135,6 +130,6 @@ public class CreateCourierTest extends BaseScenario {
         response.then()
                 .assertThat().body("message", equalTo(CONFLICT_MESSAGE))
                 .and()
-                .statusCode(409);
+                .statusCode(SC_CONFLICT);
     }
 }

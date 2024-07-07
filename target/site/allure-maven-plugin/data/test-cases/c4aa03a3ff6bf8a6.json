@@ -1,0 +1,165 @@
+{
+  "uid" : "c4aa03a3ff6bf8a6",
+  "name" : "Попытка создать существующего курьера",
+  "fullName" : "Courier.CreateCourierTest.createDopplerCourierTest",
+  "historyId" : "b2096cb498b9005cffbceb31390ad412",
+  "time" : {
+    "start" : 1720382665944,
+    "stop" : 1720382668973,
+    "duration" : 3029
+  },
+  "description" : "Попытка создать существующего курьера",
+  "descriptionHtml" : "<p>Попытка создать существующего курьера</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1720382665009,
+      "stop" : 1720382665865,
+      "duration" : 856
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Попытка создать существующего курьера",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Вызов метода создания курьера",
+      "time" : {
+        "start" : 1720382666100,
+        "stop" : 1720382667808,
+        "duration" : 1708
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "promt",
+        "value" : "Вызов метода создания курьера"
+      }, {
+        "name" : "obj",
+        "value" : "Courier(id=null, login=альберт.корнилова, password=игнатий.фомичева, firstName=Эдуард)"
+      }, {
+        "name" : "urlPath",
+        "value" : "api/v1/courier"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Вызов метода создания курьера",
+      "time" : {
+        "start" : 1720382667808,
+        "stop" : 1720382668138,
+        "duration" : 330
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "promt",
+        "value" : "Вызов метода создания курьера"
+      }, {
+        "name" : "obj",
+        "value" : "Courier(id=null, login=альберт.корнилова, password=игнатий.фомичева, firstName=Эдуард)"
+      }, {
+        "name" : "urlPath",
+        "value" : "api/v1/courier"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Проверка ответа при создании дубля",
+      "time" : {
+        "start" : 1720382668139,
+        "stop" : 1720382668967,
+        "duration" : 828
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "response",
+        "value" : "io.restassured.internal.RestAssuredResponseImpl@4f5bfbca"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1720382670691,
+      "stop" : 1720382670691,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "LAPTOP-0SPD60R3"
+  }, {
+    "name" : "thread",
+    "value" : "16284@LAPTOP-0SPD60R3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "Courier.CreateCourierTest"
+  }, {
+    "name" : "testClass",
+    "value" : "Courier.CreateCourierTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "createDopplerCourierTest"
+  }, {
+    "name" : "suite",
+    "value" : "Создание курьера"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c4aa03a3ff6bf8a6.json",
+  "parameterValues" : [ ]
+}

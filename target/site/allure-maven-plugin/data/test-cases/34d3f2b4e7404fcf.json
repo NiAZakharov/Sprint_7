@@ -1,0 +1,159 @@
+{
+  "uid" : "34d3f2b4e7404fcf",
+  "name" : "Получение списка из 2-х заказов",
+  "fullName" : "Order.CheckOrderListTest.getOrderListWithPageLimitParams",
+  "historyId" : "33e7eda29168a3f88e80c8071ceca501",
+  "time" : {
+    "start" : 1720382843423,
+    "stop" : 1720382866026,
+    "duration" : 22603
+  },
+  "description" : "Получение списка из 2-х заказов",
+  "descriptionHtml" : "<p>Получение списка из 2-х заказов</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1720382796080,
+      "stop" : 1720382796080,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Получение списка из 2-х заказов",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Получить список всех заказов по всем курьерам",
+      "time" : {
+        "start" : 1720382843424,
+        "stop" : 1720382865951,
+        "duration" : 22527
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "promt",
+        "value" : "Получить список всех заказов по всем курьерам"
+      }, {
+        "name" : "urlPath",
+        "value" : "api/v1/orders"
+      }, {
+        "name" : "params",
+        "value" : "{limit=2, page=6}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Проверка ответа от метода получения заказов",
+      "time" : {
+        "start" : 1720382865951,
+        "stop" : 1720382865975,
+        "duration" : 24
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "response",
+        "value" : "io.restassured.internal.RestAssuredResponseImpl@10ca3611"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Проверка обязательных ключей",
+      "time" : {
+        "start" : 1720382865975,
+        "stop" : 1720382866026,
+        "duration" : 51
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "response",
+        "value" : "io.restassured.internal.RestAssuredResponseImpl@10ca3611"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1720382866608,
+      "stop" : 1720382866609,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "LAPTOP-0SPD60R3"
+  }, {
+    "name" : "thread",
+    "value" : "16284@LAPTOP-0SPD60R3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "Order.CheckOrderListTest"
+  }, {
+    "name" : "testClass",
+    "value" : "Order.CheckOrderListTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "getOrderListWithPageLimitParams"
+  }, {
+    "name" : "suite",
+    "value" : "Обработка заказов"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "34d3f2b4e7404fcf.json",
+  "parameterValues" : [ ]
+}

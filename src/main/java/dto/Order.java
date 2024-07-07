@@ -1,5 +1,6 @@
 package dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -9,10 +10,15 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Order {
 
     private Integer id;
+    private Integer courierId;
     private String track;
+    private String createdAt;
+    private String updatedAt;
+    private Integer status;
 
 
     private String firstName;
@@ -23,15 +29,6 @@ public class Order {
     private Integer rentTime;
     private String deliveryDate;
     private String comment;
-    private String color;
-
-    private Integer courierId; //не обязательный
-    private Integer nearestStation; //не обязательный
-    private Integer limit; //не обязательный
-    private Integer page; //не обязательный
-
-
-
-
+    private String[] color;
 
 }

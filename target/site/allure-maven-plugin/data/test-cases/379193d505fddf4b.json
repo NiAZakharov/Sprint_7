@@ -1,0 +1,123 @@
+{
+  "uid" : "379193d505fddf4b",
+  "name" : "Создание заказа 4 с цветом ",
+  "fullName" : "Order.CreateOrderTest.createOrderTest",
+  "historyId" : "6d694b16172e3dbbdd2450ae2eef92f0",
+  "time" : {
+    "start" : 1720382867913,
+    "stop" : 1720382868346,
+    "duration" : 433
+  },
+  "description" : "Создание заказа",
+  "descriptionHtml" : "<p>Создание заказа</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1720382866613,
+      "stop" : 1720382866614,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Создание заказа",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создание заказа",
+      "time" : {
+        "start" : 1720382867920,
+        "stop" : 1720382868337,
+        "duration" : 417
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "promt",
+        "value" : "Создание заказа"
+      }, {
+        "name" : "obj",
+        "value" : "Order(id=null, courierId=null, track=null, createdAt=null, updatedAt=null, status=null, firstName=Антонина, lastName=Осипов, address=пр. Коммунистическая, 355, metroStation=com.github.javafaker.service.RandomService@aad1828, phone=+7(933)831-68-96, rentTime=13, deliveryDate=2024-07-09, comment=created by autotest, color=[])"
+      }, {
+        "name" : "urlPath",
+        "value" : "api/v1/orders"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1720382868349,
+      "stop" : 1720382868349,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "LAPTOP-0SPD60R3"
+  }, {
+    "name" : "thread",
+    "value" : "16284@LAPTOP-0SPD60R3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "Order.CreateOrderTest"
+  }, {
+    "name" : "testClass",
+    "value" : "Order.CreateOrderTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "createOrderTest"
+  }, {
+    "name" : "suite",
+    "value" : "Создание заказа"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "379193d505fddf4b.json",
+  "parameterValues" : [ ]
+}

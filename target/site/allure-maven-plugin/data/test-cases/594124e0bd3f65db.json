@@ -1,0 +1,141 @@
+{
+  "uid" : "594124e0bd3f65db",
+  "name" : "Успешное создание курьера",
+  "fullName" : "Courier.CreateCourierTest.createSuccessfulCourierTest",
+  "historyId" : "a615142aad8bce155d823ead733a6fc1",
+  "time" : {
+    "start" : 1720382669448,
+    "stop" : 1720382669975,
+    "duration" : 527
+  },
+  "description" : "Создание курьера и проверка ответа метода",
+  "descriptionHtml" : "<p>Создание курьера и проверка ответа метода</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1720382665009,
+      "stop" : 1720382665865,
+      "duration" : 856
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Создание курьера и проверка ответа метода",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Вызов метода создания курьера",
+      "time" : {
+        "start" : 1720382669459,
+        "stop" : 1720382669965,
+        "duration" : 506
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "promt",
+        "value" : "Вызов метода создания курьера"
+      }, {
+        "name" : "obj",
+        "value" : "Courier(id=null, login=зинаида.никифоров, password=валерий.князев, firstName=Иван)"
+      }, {
+        "name" : "urlPath",
+        "value" : "api/v1/courier"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Проверка положительного ответа",
+      "time" : {
+        "start" : 1720382669965,
+        "stop" : 1720382669975,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "response",
+        "value" : "io.restassured.internal.RestAssuredResponseImpl@504216ff"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1720382670691,
+      "stop" : 1720382670691,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "LAPTOP-0SPD60R3"
+  }, {
+    "name" : "thread",
+    "value" : "16284@LAPTOP-0SPD60R3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "Courier.CreateCourierTest"
+  }, {
+    "name" : "testClass",
+    "value" : "Courier.CreateCourierTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "createSuccessfulCourierTest"
+  }, {
+    "name" : "suite",
+    "value" : "Создание курьера"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "594124e0bd3f65db.json",
+  "parameterValues" : [ ]
+}

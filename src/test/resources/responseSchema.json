@@ -1,0 +1,131 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "orders": {
+      "type": "array",
+      "items": [
+        {
+          "type": ["object","null"],
+          "properties": {
+            "id": {
+              "type": ["integer", "null"]
+            },
+            "courierId": {
+              "type": ["integer", "null"]
+            },
+            "firstName": {
+              "type": ["string", "null"]
+            },
+            "lastName": {
+              "type": ["string", "null"]
+            },
+            "address": {
+              "type": ["string", "null"]
+            },
+            "metroStation": {
+              "type": ["string", "null"]
+            },
+            "phone": {
+              "type": ["string", "null"]
+            },
+            "rentTime": {
+              "type": ["integer", "null"]
+            },
+            "deliveryDate": {
+              "type": ["string", "null"]
+            },
+            "track": {
+              "type": ["integer", "null"]
+            },
+            "color": {
+              "type": ["array","null"],
+              "items": [
+                {
+                  "type": ["string", "null"]
+                }
+              ]
+            },
+            "comment": {
+              "type": ["string", "null"]
+            },
+            "createdAt": {
+              "type": "string"
+            },
+            "updatedAt": {
+              "type": "string"
+            },
+            "status": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "courierId",
+            "firstName",
+            "lastName",
+            "address",
+            "metroStation",
+            "phone",
+            "rentTime",
+            "deliveryDate",
+            "track",
+            "color",
+            "comment",
+            "createdAt",
+            "updatedAt",
+            "status"
+          ]
+        }
+      ]
+    },
+    "pageInfo": {
+      "type": "object",
+      "properties": {
+        "page": {
+          "type": "integer"
+        },
+        "total": {
+          "type": "integer"
+        },
+        "limit": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "page",
+        "total",
+        "limit"
+      ]
+    },
+    "availableStations": {
+      "type": "array",
+      "items": [
+        {
+          "type": ["object","null"],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "number": {
+              "type": "string"
+            },
+            "color": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "number",
+            "color"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "orders",
+    "pageInfo",
+    "availableStations"
+  ]
+}

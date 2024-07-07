@@ -15,6 +15,7 @@
         <allure.results.directory>${basedir}/target/allure-results</allure.results.directory>
 
         <rest-assured.version>5.4.0</rest-assured.version>
+        <json-schema-validator.version>4.4.0</json-schema-validator.version>
         <junit.jupiter.version>5.9.1</junit.jupiter.version>
         <junit.platform.version>1.9.1</junit.platform.version>
         <allure.version>2.13.1</allure.version>
@@ -74,6 +75,11 @@
             <version>${rest-assured.version}</version>
         </dependency>
         <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>json-schema-validator</artifactId>
+            <version>${json-schema-validator.version}</version>
+        </dependency>
+        <dependency>
             <groupId>com.github.javafaker</groupId>
             <artifactId>javafaker</artifactId>
             <version>${faker.version}</version>
@@ -82,6 +88,11 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>${gson.version}</version>
         </dependency>
     </dependencies>
 
@@ -128,7 +139,6 @@
                     <redirectTestOutputToFile>false</redirectTestOutputToFile>
                     <systemPropertyVariables>
                         <tempDirectory>${project.build.directory}\temp\</tempDirectory>
-<!--                        <webdriver.driver>${webdriver.version}</webdriver.driver>-->
                     </systemPropertyVariables>
                 </configuration>
                 <dependencies>

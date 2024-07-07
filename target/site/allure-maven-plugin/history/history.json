@@ -1,0 +1,403 @@
+{
+  "be2eed3fce9c320432987ecbadffcceb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9536974b3f843be3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1720382866031,
+        "stop" : 1720382866606,
+        "duration" : 575
+      }
+    } ]
+  },
+  "a615142aad8bce155d823ead733a6fc1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "594124e0bd3f65db",
+      "status" : "passed",
+      "time" : {
+        "start" : 1720382669448,
+        "stop" : 1720382669975,
+        "duration" : 527
+      }
+    } ]
+  },
+  "df2df54343df5aec8919e227f78a815e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "de09a81f065f9415",
+      "status" : "passed",
+      "time" : {
+        "start" : 1720382796082,
+        "stop" : 1720382818475,
+        "duration" : 22393
+      }
+    } ]
+  },
+  "e59b3c2303577b837761648b075a5d5a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7662f3184da133cb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1720382818478,
+        "stop" : 1720382818832,
+        "duration" : 354
+      }
+    } ]
+  },
+  "b18f4d8288089021e31a882f56ddd311" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "361829a841d0f7c5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1720382670309,
+        "stop" : 1720382670685,
+        "duration" : 376
+      }
+    } ]
+  },
+  "6d694b16172e3dbbdd2450ae2eef92f0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "379193d505fddf4b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1720382867913,
+        "stop" : 1720382868346,
+        "duration" : 433
+      }
+    } ]
+  },
+  "77d75f03efb62a38491ea4c801676223" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "15b200eae71b54a8",
+      "status" : "broken",
+      "statusDetails" : "Expected response body to be verified as JSON, HTML or XML but no content-type was defined in the response.\nTry registering a default parser using:\n   RestAssured.defaultParser(<parser type>);\nContent was:\nService unavailable\n",
+      "time" : {
+        "start" : 1720382734451,
+        "stop" : 1720382795281,
+        "duration" : 60830
+      }
+    } ]
+  },
+  "8744ab189bbbd3e8bace2dc0eb6e9ee6" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c74b21498dfadfaa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1720382733526,
+        "stop" : 1720382734447,
+        "duration" : 921
+      }
+    } ]
+  },
+  "527d74616d26714b7cdba047e2f65ca9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a9c67274d4bf053a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1720382669979,
+        "stop" : 1720382670304,
+        "duration" : 325
+      }
+    } ]
+  },
+  "e592a24825b7f83fd116c1a37986a3d5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "84bc402f07855144",
+      "status" : "passed",
+      "time" : {
+        "start" : 1720382818836,
+        "stop" : 1720382843420,
+        "duration" : 24584
+      }
+    } ]
+  },
+  "49b86d45b44ab21cb36e712ec2646568" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "36d9c064747ca172",
+      "status" : "passed",
+      "time" : {
+        "start" : 1720382670707,
+        "stop" : 1720382671139,
+        "duration" : 432
+      }
+    } ]
+  },
+  "954046ac7fcd7f6922acc16e53ac4518" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b9bb9eebb59f6b4d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1720382867136,
+        "stop" : 1720382867503,
+        "duration" : 367
+      }
+    } ]
+  },
+  "176a08d94ee2b673c78e7c4caa69eb61" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "58ad87365a3d8dc1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1720382866634,
+        "stop" : 1720382867133,
+        "duration" : 499
+      }
+    } ]
+  },
+  "74d2512ba15a0b3e5652d0d10ceceb6d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "995cacac16f4dc35",
+      "status" : "passed",
+      "time" : {
+        "start" : 1720382795285,
+        "stop" : 1720382796074,
+        "duration" : 789
+      }
+    } ]
+  },
+  "214fd478fddceb47d535b3c12b895870" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8ea1fe886225afa3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1720382732787,
+        "stop" : 1720382733522,
+        "duration" : 735
+      }
+    } ]
+  },
+  "b2096cb498b9005cffbceb31390ad412" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c4aa03a3ff6bf8a6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1720382665944,
+        "stop" : 1720382668973,
+        "duration" : 3029
+      }
+    } ]
+  },
+  "606b9184d8a6e1095e1bbbaead430c87" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7c3e681ceecc72b4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1720382867506,
+        "stop" : 1720382867909,
+        "duration" : 403
+      }
+    } ]
+  },
+  "563bb0e982dfd73736dc8b8be2f73de1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5c36d60decbb9fee",
+      "status" : "passed",
+      "time" : {
+        "start" : 1720382731982,
+        "stop" : 1720382732783,
+        "duration" : 801
+      }
+    } ]
+  },
+  "33e7eda29168a3f88e80c8071ceca501" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "34d3f2b4e7404fcf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1720382843423,
+        "stop" : 1720382866026,
+        "duration" : 22603
+      }
+    } ]
+  },
+  "db3ab212ae1816285cd1d2b20cb0bf13" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "825b477c27356147",
+      "status" : "broken",
+      "statusDetails" : "Expected response body to be verified as JSON, HTML or XML but no content-type was defined in the response.\nTry registering a default parser using:\n   RestAssured.defaultParser(<parser type>);\nContent was:\nService unavailable\n",
+      "time" : {
+        "start" : 1720382671143,
+        "stop" : 1720382731970,
+        "duration" : 60827
+      }
+    } ]
+  },
+  "30a04cbc5e98e6cda0155506f966f727" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3c58cc92950828de",
+      "status" : "passed",
+      "time" : {
+        "start" : 1720382669007,
+        "stop" : 1720382669443,
+        "duration" : 436
+      }
+    } ]
+  }
+}

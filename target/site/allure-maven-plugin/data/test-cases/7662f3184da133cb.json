@@ -1,0 +1,123 @@
+{
+  "uid" : "7662f3184da133cb",
+  "name" : "Получение заказов несуществующего курьера",
+  "fullName" : "Order.CheckOrderListTest.getOrderListForGhostCourier",
+  "historyId" : "e59b3c2303577b837761648b075a5d5a",
+  "time" : {
+    "start" : 1720382818478,
+    "stop" : 1720382818832,
+    "duration" : 354
+  },
+  "description" : "Получение заказов несуществующего курьера",
+  "descriptionHtml" : "<p>Получение заказов несуществующего курьера</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1720382796080,
+      "stop" : 1720382796080,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Получение заказов несуществующего курьера",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Получить список всех заказов по всем курьерам",
+      "time" : {
+        "start" : 1720382818478,
+        "stop" : 1720382818821,
+        "duration" : 343
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "promt",
+        "value" : "Получить список всех заказов по всем курьерам"
+      }, {
+        "name" : "urlPath",
+        "value" : "api/v1/orders"
+      }, {
+        "name" : "params",
+        "value" : "{courierId=1}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1720382866608,
+      "stop" : 1720382866609,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "LAPTOP-0SPD60R3"
+  }, {
+    "name" : "thread",
+    "value" : "16284@LAPTOP-0SPD60R3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "Order.CheckOrderListTest"
+  }, {
+    "name" : "testClass",
+    "value" : "Order.CheckOrderListTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "getOrderListForGhostCourier"
+  }, {
+    "name" : "suite",
+    "value" : "Обработка заказов"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7662f3184da133cb.json",
+  "parameterValues" : [ ]
+}
