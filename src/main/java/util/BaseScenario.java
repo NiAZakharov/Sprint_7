@@ -1,23 +1,18 @@
 package util;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ObjectNode;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Step;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import io.restassured.specification.ResponseSpecification;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 
 import java.util.HashMap;
-import java.util.Map;
 
 import static io.restassured.RestAssured.given;
-import static org.apache.http.HttpStatus.SC_BAD_REQUEST;
-import static org.hamcrest.Matchers.equalTo;
 
 public class BaseScenario {
 
@@ -59,7 +54,6 @@ public class BaseScenario {
         RestAssured.requestSpecification = requestSpecification;
 
 
-
     }
 
 
@@ -90,6 +84,7 @@ public class BaseScenario {
                 .when()
                 .get(urlPath);
     }
+
     public void logResponseToAllure(Response response) {
         //Добавил вручную, т.к. автоматически это почему то не срабатывает. Думаю из за ассерта в цепочке
         Allure.addAttachment("Response Status Code", String.valueOf(response.getStatusCode()));

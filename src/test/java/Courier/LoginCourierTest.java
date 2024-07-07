@@ -2,7 +2,6 @@ package Courier;
 
 import com.github.javafaker.Faker;
 import dto.Courier;
-import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
@@ -15,7 +14,6 @@ import util.BaseScenario;
 import java.util.Locale;
 
 import static org.apache.http.HttpStatus.SC_BAD_REQUEST;
-import static org.apache.http.HttpStatus.SC_CREATED;
 import static org.apache.http.HttpStatus.SC_NOT_FOUND;
 import static org.apache.http.HttpStatus.SC_OK;
 import static org.hamcrest.Matchers.equalTo;
@@ -171,7 +169,7 @@ public class LoginCourierTest extends BaseScenario {
     }
 
     @Step(value = "Проверка некорректного запроса 400")
-    public void checkErrorResponse (Response response) {
+    public void checkErrorResponse(Response response) {
         log.info(response.prettyPrint());
         logResponseToAllure(response);
         response.then()
@@ -181,7 +179,7 @@ public class LoginCourierTest extends BaseScenario {
     }
 
     @Step(value = "Проверка некорректного запроса 404")
-    public void checkNotFoundResponse (Response response) {
+    public void checkNotFoundResponse(Response response) {
         log.info(response.prettyPrint());
         logResponseToAllure(response);
         response.then()
@@ -191,7 +189,7 @@ public class LoginCourierTest extends BaseScenario {
     }
 
     @Step(value = "Проверка успешного запроса")
-    public void checkSuccessResponse (Response response) {
+    public void checkSuccessResponse(Response response) {
         log.info(response.prettyPrint());
         logResponseToAllure(response);
         response.then()

@@ -40,7 +40,7 @@ public class CreateCourierTest extends BaseScenario {
                 .password(faker.name().username())
                 .build();
 
-        Response response = sendPostRequest("Вызов метода создания курьера",courier, API_PATH);
+        Response response = sendPostRequest("Вызов метода создания курьера", courier, API_PATH);
         checkSuccessfulResponse(response);
     }
 
@@ -55,7 +55,7 @@ public class CreateCourierTest extends BaseScenario {
                 .password(faker.name().username())
                 .build();
 
-        Response response = sendPostRequest("Вызов метода создания курьера",courier, API_PATH);
+        Response response = sendPostRequest("Вызов метода создания курьера", courier, API_PATH);
         checkSuccessfulResponse(response);
     }
 
@@ -70,7 +70,7 @@ public class CreateCourierTest extends BaseScenario {
                 .firstName(faker.name().firstName())
                 .build();
 
-        Response response = sendPostRequest("Вызов метода создания курьера",courier, API_PATH);
+        Response response = sendPostRequest("Вызов метода создания курьера", courier, API_PATH);
         checkFailedResponse(response);
     }
 
@@ -85,7 +85,7 @@ public class CreateCourierTest extends BaseScenario {
                 .password(faker.name().username())
                 .build();
 
-        Response response = sendPostRequest("Вызов метода создания курьера",courier, API_PATH);
+        Response response = sendPostRequest("Вызов метода создания курьера", courier, API_PATH);
         checkFailedResponse(response);
     }
 
@@ -101,8 +101,8 @@ public class CreateCourierTest extends BaseScenario {
                 .password(faker.name().username())
                 .build();
 
-        sendPostRequest("Вызов метода создания курьера",courier, API_PATH);
-        Response response = sendPostRequest("Вызов метода создания курьера",courier, API_PATH);
+        sendPostRequest("Вызов метода создания курьера", courier, API_PATH);
+        Response response = sendPostRequest("Вызов метода создания курьера", courier, API_PATH);
         checkDopplerResponse(response);
     }
 

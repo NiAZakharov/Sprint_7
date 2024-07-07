@@ -42,8 +42,8 @@ public class CreateOrderTest extends BaseScenario {
                 .address(faker.address().streetAddress())
                 .metroStation(faker.random().toString())
                 .phone(faker.phoneNumber().phoneNumber())
-                .rentTime(faker.number().numberBetween(1,30))
-                .deliveryDate(sdf.format(faker.date().future(10,TimeUnit.DAYS)))
+                .rentTime(faker.number().numberBetween(1, 30))
+                .deliveryDate(sdf.format(faker.date().future(10, TimeUnit.DAYS)))
                 .comment("created by autotest")
                 .color(color)
                 .build();

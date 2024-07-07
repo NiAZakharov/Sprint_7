@@ -6,48 +6,90 @@
       "type": "array",
       "items": [
         {
-          "type": ["object","null"],
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "id": {
-              "type": ["integer", "null"]
+              "type": [
+                "integer",
+                "null"
+              ]
             },
             "courierId": {
-              "type": ["integer", "null"]
+              "type": [
+                "integer",
+                "null"
+              ]
             },
             "firstName": {
-              "type": ["string", "null"]
+              "type": [
+                "string",
+                "null"
+              ]
             },
             "lastName": {
-              "type": ["string", "null"]
+              "type": [
+                "string",
+                "null"
+              ]
             },
             "address": {
-              "type": ["string", "null"]
+              "type": [
+                "string",
+                "null"
+              ]
             },
             "metroStation": {
-              "type": ["string", "null"]
+              "type": [
+                "string",
+                "null"
+              ]
             },
             "phone": {
-              "type": ["string", "null"]
+              "type": [
+                "string",
+                "null"
+              ]
             },
             "rentTime": {
-              "type": ["integer", "null"]
+              "type": [
+                "integer",
+                "null"
+              ]
             },
             "deliveryDate": {
-              "type": ["string", "null"]
+              "type": [
+                "string",
+                "null"
+              ]
             },
             "track": {
-              "type": ["integer", "null"]
+              "type": [
+                "integer",
+                "null"
+              ]
             },
             "color": {
-              "type": ["array","null"],
+              "type": [
+                "array",
+                "null"
+              ],
               "items": [
                 {
-                  "type": ["string", "null"]
+                  "type": [
+                    "string",
+                    "null"
+                  ]
                 }
               ]
             },
             "comment": {
-              "type": ["string", "null"]
+              "type": [
+                "string",
+                "null"
+              ]
             },
             "createdAt": {
               "type": "string"
@@ -102,7 +144,10 @@
       "type": "array",
       "items": [
         {
-          "type": ["object","null"],
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "name": {
               "type": "string"
