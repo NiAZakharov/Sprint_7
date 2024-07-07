@@ -1,0 +1,1 @@
+{"firstName":"Людмила","lastName":"Родионова","address":"Луговая площадь, 709","metroStation":"com.github.javafaker.service.RandomService@2a7eb66e","phone":"+7(951)462-58-51","rentTime":14,"deliveryDate":"2024-07-10","comment":"created by autotest","color":["GREY","BLACK"]}

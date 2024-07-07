@@ -1,0 +1,1 @@
+{"firstName":"Таисия","lastName":"Комиссарова","address":"Восточная улица, 560","metroStation":"com.github.javafaker.service.RandomService@37d57240","phone":"+7(961)441-59-45","rentTime":14,"deliveryDate":"2024-07-15","comment":"created by autotest","color":[""]}

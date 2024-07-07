@@ -1,0 +1,1 @@
+{"firstName":"Алексей","lastName":"Исаева","address":"пр. Рабочая, 526","metroStation":"com.github.javafaker.service.RandomService@af88ccf","phone":"+7(927)345-44-74","rentTime":17,"deliveryDate":"2024-07-11","comment":"created by autotest","color":["GREY"]}

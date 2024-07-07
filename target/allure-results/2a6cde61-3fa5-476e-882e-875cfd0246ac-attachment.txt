@@ -1,0 +1,1 @@
+{"firstName":"Вячеслав","lastName":"Горбачева","address":"Юбилейная улица, 447","metroStation":"com.github.javafaker.service.RandomService@6dd835de","phone":"+7(994)617-55-43","rentTime":15,"deliveryDate":"2024-07-08","comment":"created by autotest","color":["BLACK"]}

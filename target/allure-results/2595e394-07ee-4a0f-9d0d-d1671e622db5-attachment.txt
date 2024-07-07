@@ -1,0 +1,8 @@
+Access-Control-Allow-Origin=*
+Content-Length=11
+Content-Type=application/json; charset=utf-8
+Date=Sun, 07 Jul 2024 23:11:44 GMT
+ETag=W/"b-Ai2R8hgEarLmHKwesT1qcY913ys"
+Set-Cookie=_yasc=a914G4fmBEsRw6nspC4b1oJ5yFqek7ptkDy8sXOhlVA6KUPOq6xXtEQR2/MKiB1h; domain=.praktikum-services.ru; path=/; expires=Wed, 05 Jul 2034 23:11:44 GMT; secure
+X-Powered-By=Express
+X-Request-Id=1720393904338140-5717126065859147174

@@ -3,273 +3,273 @@
   "name" : "behaviors",
   "children" : [ {
     "name" : "Попытка создать существующего курьера",
-    "uid" : "55641243f20b0ce9",
+    "uid" : "d5c67d25a0608d93",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1720390573925,
-      "stop" : 1720390577777,
-      "duration" : 3852
+      "start" : 1720393904588,
+      "stop" : 1720393908291,
+      "duration" : 3703
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Не успешное создание курьера",
-    "uid" : "7b68b10ab1bf5a7a",
+    "uid" : "2cc60834c9dc4966",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1720390577815,
-      "stop" : 1720390578295,
-      "duration" : 480
+      "start" : 1720393908333,
+      "stop" : 1720393908791,
+      "duration" : 458
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Успешное создание курьера",
-    "uid" : "8e9de045f5b378a3",
+    "uid" : "754217e9c167b81a",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1720390578300,
-      "stop" : 1720390578672,
-      "duration" : 372
+      "start" : 1720393908796,
+      "stop" : 1720393909280,
+      "duration" : 484
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Не успешное создание курьера",
-    "uid" : "ce0a863f126bbed6",
+    "uid" : "84d953ab9bcf01c",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1720390578677,
-      "stop" : 1720390579118,
-      "duration" : 441
+      "start" : 1720393909284,
+      "stop" : 1720393909681,
+      "duration" : 397
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Успешное создание курьера",
-    "uid" : "28c93f7ac3969f3f",
+    "uid" : "1fb82333c7bda7d5",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1720390579123,
-      "stop" : 1720390579558,
-      "duration" : 435
+      "start" : 1720393909688,
+      "stop" : 1720393910105,
+      "duration" : 417
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Попытка авторизоваться не зарегистрированным курьером",
-    "uid" : "df1d5d6d32f0c327",
+    "uid" : "e1512aab8d295830",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1720390579580,
-      "stop" : 1720390580035,
-      "duration" : 455
+      "start" : 1720393910122,
+      "stop" : 1720393910549,
+      "duration" : 427
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Авторизоваться без пароля",
-    "uid" : "80742611b53c86d8",
+    "uid" : "5f262a0bae47253e",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "broken",
     "time" : {
-      "start" : 1720390580038,
-      "stop" : 1720390640840,
-      "duration" : 60802
+      "start" : 1720393910553,
+      "stop" : 1720393971318,
+      "duration" : 60765
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Авторизация курьером",
-    "uid" : "d4e143328b845e96",
+    "uid" : "d4cf3ed14845107d",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1720390640852,
-      "stop" : 1720390641750,
-      "duration" : 898
+      "start" : 1720393971329,
+      "stop" : 1720393972093,
+      "duration" : 764
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Авторизоваться без пароля",
-    "uid" : "7e3617622d942b41",
+    "uid" : "8c73fcd75ecec79f",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1720390641760,
-      "stop" : 1720390642531,
-      "duration" : 771
+      "start" : 1720393972096,
+      "stop" : 1720393972864,
+      "duration" : 768
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Авторизоваться без пароля",
-    "uid" : "2ab306cb05005c74",
+    "uid" : "f6f904e0a5fc813",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1720390642535,
-      "stop" : 1720390643300,
-      "duration" : 765
+      "start" : 1720393972867,
+      "stop" : 1720393973717,
+      "duration" : 850
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Авторизоваться без пароля",
-    "uid" : "4480e5759bc966f8",
+    "uid" : "8c7fc967de811ae0",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "broken",
     "time" : {
-      "start" : 1720390643303,
-      "stop" : 1720390704233,
-      "duration" : 60930
+      "start" : 1720393973720,
+      "stop" : 1720394034490,
+      "duration" : 60770
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Авторизоваться без логина",
-    "uid" : "d64d9407ed33e47b",
+    "uid" : "9e1fd9e1d3263776",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1720390704238,
-      "stop" : 1720390705128,
-      "duration" : 890
+      "start" : 1720394034493,
+      "stop" : 1720394035262,
+      "duration" : 769
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Получение заказов по станции",
-    "uid" : "770bdf0de77c779e",
+    "uid" : "5c1ff96ddc40ebaa",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1720390705136,
-      "stop" : 1720390729612,
-      "duration" : 24476
+      "start" : 1720394035270,
+      "stop" : 1720394059632,
+      "duration" : 24362
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Получение заказов несуществующего курьера",
-    "uid" : "59712813b042b76a",
+    "uid" : "de2a347e87cce084",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1720390729616,
-      "stop" : 1720390730038,
-      "duration" : 422
+      "start" : 1720394059635,
+      "stop" : 1720394060048,
+      "duration" : 413
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Получение списка заказов",
-    "uid" : "fac0b8c04c12ca93",
+    "uid" : "ba8ed768abc4f4f7",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1720390730042,
-      "stop" : 1720390751404,
-      "duration" : 21362
+      "start" : 1720394060051,
+      "stop" : 1720394082805,
+      "duration" : 22754
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Получение списка из 2-х заказов",
-    "uid" : "e3e169d0d3b8d909",
+    "uid" : "b41711a8c44d3f89",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1720390751409,
-      "stop" : 1720390775829,
-      "duration" : 24420
+      "start" : 1720394082810,
+      "stop" : 1720394106785,
+      "duration" : 23975
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Получение заказов для курьера",
-    "uid" : "1e7d399aa90d7226",
+    "uid" : "1063bee302ba76ea",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1720390775836,
-      "stop" : 1720390776396,
-      "duration" : 560
+      "start" : 1720394106789,
+      "stop" : 1720394107427,
+      "duration" : 638
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Создание заказа 1 с цветом GREY",
-    "uid" : "201d11ff1fcefaad",
+    "uid" : "76c5562a34d25c45",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1720390776427,
-      "stop" : 1720390777005,
-      "duration" : 578
+      "start" : 1720394107452,
+      "stop" : 1720394107886,
+      "duration" : 434
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Создание заказа 2 с цветом BLACK",
-    "uid" : "6a18d9788c339fc5",
+    "uid" : "eae10491ad28e5f7",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1720390777009,
-      "stop" : 1720390777423,
-      "duration" : 414
+      "start" : 1720394107890,
+      "stop" : 1720394108383,
+      "duration" : 493
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Создание заказа 3 с цветом GREY, BLACK",
-    "uid" : "ec00d266be8b3682",
+    "uid" : "aa6b3b4c0b23d531",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1720390777426,
-      "stop" : 1720390777790,
-      "duration" : 364
+      "start" : 1720394108386,
+      "stop" : 1720394108828,
+      "duration" : 442
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Создание заказа 4 с цветом ",
-    "uid" : "7706cf38f3c500f1",
+    "uid" : "30b34fd20f7c29e2",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1720390777793,
-      "stop" : 1720390778193,
-      "duration" : 400
+      "start" : 1720394108831,
+      "stop" : 1720394109256,
+      "duration" : 425
     },
     "flaky" : false,
     "newFailed" : false,
