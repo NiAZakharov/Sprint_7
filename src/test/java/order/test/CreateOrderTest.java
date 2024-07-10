@@ -1,15 +1,16 @@
-package Order;
+package order.test;
 
 import com.github.javafaker.Faker;
-import dto.Order;
+import courier.step.CourierStep;
+import edu.practikum.dto.Order;
+import edu.practikum.util.BaseScenario;
 import io.qameta.allure.Description;
 import io.restassured.response.Response;
 import lombok.extern.slf4j.Slf4j;
-import org.hamcrest.Matchers;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
-import util.BaseScenario;
 
 import java.text.SimpleDateFormat;
 import java.util.Locale;
@@ -25,6 +26,13 @@ public class CreateOrderTest extends BaseScenario {
     private final static String API_CREATE_ORDER = "api/v1/orders";
 
     Faker faker = new Faker(new Locale("ru_Ru", "RU"));
+
+    private CourierStep courierStep;
+
+    @BeforeEach
+    public void init() {
+        courierStep = new CourierStep();
+    }
 
     @ParameterizedTest(name = "Создание заказа {index} с цветом {0}")
     @DisplayName("Создание заказа")
@@ -50,10 +58,9 @@ public class CreateOrderTest extends BaseScenario {
 
         Response response = sendPostRequest("Создание заказа", order, API_CREATE_ORDER);
 
-        log.info(response.prettyPrint());
-        response.then()
-                .assertThat().body("track", Matchers.any(Integer.class))
-                .and()
-                .statusCode(SC_CREATED);
+        courierStep
+                .checkEasyResponse(response, SC_CREATED, "track",
+                        "Проверка положительного ответа");
+
     }
 }

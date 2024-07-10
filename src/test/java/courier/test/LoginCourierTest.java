@@ -1,22 +1,21 @@
-package Courier;
+package courier.test;
 
 import com.github.javafaker.Faker;
-import dto.Courier;
+import courier.step.CourierStep;
+import edu.practikum.dto.Courier;
+import edu.practikum.util.BaseScenario;
 import io.qameta.allure.Description;
-import io.qameta.allure.Step;
 import io.restassured.response.Response;
 import lombok.extern.slf4j.Slf4j;
-import org.hamcrest.Matchers;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import util.BaseScenario;
 
 import java.util.Locale;
 
 import static org.apache.http.HttpStatus.SC_BAD_REQUEST;
 import static org.apache.http.HttpStatus.SC_NOT_FOUND;
 import static org.apache.http.HttpStatus.SC_OK;
-import static org.hamcrest.Matchers.equalTo;
 
 @Slf4j
 @DisplayName("Логин курьера в системе")
@@ -29,6 +28,12 @@ public class LoginCourierTest extends BaseScenario {
 
     Faker faker = new Faker(new Locale("ru_Ru", "RU"));
 
+    private CourierStep courierStep;
+
+    @BeforeEach
+    public void init() {
+        courierStep = new CourierStep();
+    }
 
     @Test
     @DisplayName("Авторизация курьером")
@@ -43,7 +48,8 @@ public class LoginCourierTest extends BaseScenario {
 
         sendPostRequest("Создание курьера для авторизации", courier, API_CREATE_PATH);
         Response response = sendPostRequest("Авторизация", courier, API_LOGIN_PATH);
-        checkSuccessResponse(response);
+        courierStep
+                .checkEasyResponse(response, SC_OK, "id", "Проверка успешного запроса");
     }
 
     @Test
@@ -57,7 +63,9 @@ public class LoginCourierTest extends BaseScenario {
                 .build();
 
         Response response = sendPostRequest("Авторизация", courier, API_LOGIN_PATH);
-        checkNotFoundResponse(response);
+        courierStep
+                .checkEasyResponse(response, SC_NOT_FOUND, "message",
+                        NOT_FOUND_MESSAGE, "Проверка некорректного запроса 404");
     }
 
     @Test
@@ -79,7 +87,9 @@ public class LoginCourierTest extends BaseScenario {
         //"id" : null, и добавил в класс курьера аннотацию. Теперь не получится передать ключ без value
         courier.setPassword(null);
         Response response = sendPostRequest("Авторизация", courier, API_LOGIN_PATH);
-        checkErrorResponse(response);
+        courierStep
+                .checkEasyResponse(response, SC_BAD_REQUEST, "message",
+                        INSUFFICIENT_DATA_MESSAGE, "Проверка некорректного запроса 400");
     }
 
     @Test
@@ -99,7 +109,9 @@ public class LoginCourierTest extends BaseScenario {
         //поэтому пароль принудительно затирается
         courier.setPassword("");
         Response response = sendPostRequest("Авторизация", courier, API_LOGIN_PATH);
-        checkErrorResponse(response);
+        courierStep
+                .checkEasyResponse(response, SC_BAD_REQUEST, "message",
+                        INSUFFICIENT_DATA_MESSAGE, "Проверка некорректного запроса 400");
     }
 
     @Test
@@ -117,11 +129,9 @@ public class LoginCourierTest extends BaseScenario {
 
         courier.setPassword(faker.random().toString());
         Response response = sendPostRequest("Авторизация", courier, API_LOGIN_PATH);
-        log.info(response.prettyPrint());
-        response.then()
-                .assertThat().body("message", equalTo(NOT_FOUND_MESSAGE))
-                .and()
-                .statusCode(SC_NOT_FOUND);
+        courierStep
+                .checkEasyResponse(response, SC_NOT_FOUND, "message",
+                        NOT_FOUND_MESSAGE, "Проверка некорректного запроса 404");
     }
 
     @Test
@@ -143,7 +153,9 @@ public class LoginCourierTest extends BaseScenario {
                 .build();
 
         Response response = sendPostRequest("Авторизация", courier2, API_LOGIN_PATH);
-        checkErrorResponse(response);
+        courierStep
+                .checkEasyResponse(response, SC_BAD_REQUEST, "message",
+                        INSUFFICIENT_DATA_MESSAGE, "Проверка некорректного запроса 400");
     }
 
     @Test
@@ -165,37 +177,9 @@ public class LoginCourierTest extends BaseScenario {
                 .build();
 
         Response response = sendPostRequest("Авторизация", courier2, API_LOGIN_PATH);
-        checkErrorResponse(response);
-    }
-
-    @Step(value = "Проверка некорректного запроса 400")
-    public void checkErrorResponse(Response response) {
-        log.info(response.prettyPrint());
-        logResponseToAllure(response);
-        response.then()
-                .assertThat().body("message", equalTo(INSUFFICIENT_DATA_MESSAGE))
-                .and()
-                .statusCode(SC_BAD_REQUEST);
-    }
-
-    @Step(value = "Проверка некорректного запроса 404")
-    public void checkNotFoundResponse(Response response) {
-        log.info(response.prettyPrint());
-        logResponseToAllure(response);
-        response.then()
-                .assertThat().body("message", equalTo(NOT_FOUND_MESSAGE))
-                .and()
-                .statusCode(SC_NOT_FOUND);
-    }
-
-    @Step(value = "Проверка успешного запроса")
-    public void checkSuccessResponse(Response response) {
-        log.info(response.prettyPrint());
-        logResponseToAllure(response);
-        response.then()
-                .assertThat().body("id", Matchers.any(Integer.class))
-                .and()
-                .statusCode(SC_OK);
+        courierStep
+                .checkEasyResponse(response, SC_BAD_REQUEST, "message",
+                        INSUFFICIENT_DATA_MESSAGE, "Проверка некорректного запроса 400");
     }
 
 }
