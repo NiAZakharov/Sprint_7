@@ -1,4 +1,4 @@
-package util;
+package edu.practikum.util;
 
 import lombok.Data;
 

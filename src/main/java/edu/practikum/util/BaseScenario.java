@@ -1,4 +1,4 @@
-package util;
+package edu.practikum.util;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.qameta.allure.Allure;

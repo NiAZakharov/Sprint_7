@@ -1,4 +1,4 @@
-package util;
+package edu.practikum.util;
 
 import io.qameta.allure.Allure;
 import io.restassured.filter.Filter;

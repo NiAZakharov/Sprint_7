@@ -1,21 +1,21 @@
-package Courier;
+package courier.test;
 
 import com.github.javafaker.Faker;
-import dto.Courier;
+import courier.step.CourierStep;
+import edu.practikum.dto.Courier;
+import edu.practikum.util.BaseScenario;
 import io.qameta.allure.Description;
-import io.qameta.allure.Step;
 import io.restassured.response.Response;
 import lombok.extern.slf4j.Slf4j;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import util.BaseScenario;
 
 import java.util.Locale;
 
 import static org.apache.http.HttpStatus.SC_BAD_REQUEST;
 import static org.apache.http.HttpStatus.SC_CONFLICT;
 import static org.apache.http.HttpStatus.SC_CREATED;
-import static org.hamcrest.Matchers.equalTo;
 
 
 @Slf4j
@@ -27,6 +27,13 @@ public class CreateCourierTest extends BaseScenario {
     private final static String CONFLICT_MESSAGE = "Этот логин уже используется. Попробуйте другой.";
 
     Faker faker = new Faker(new Locale("ru_Ru", "RU"));
+
+    private CourierStep courierStep;
+
+    @BeforeEach
+    public void init() {
+        courierStep = new CourierStep();
+    }
 
     @Test
     @DisplayName("Успешное создание курьера")
@@ -41,7 +48,10 @@ public class CreateCourierTest extends BaseScenario {
                 .build();
 
         Response response = sendPostRequest("Вызов метода создания курьера", courier, API_PATH);
-        checkSuccessfulResponse(response);
+        courierStep
+                .checkEasyResponse(response, SC_CREATED, "ok",
+                        true, "Проверка положительного ответа");
+
     }
 
     @Test
@@ -56,7 +66,9 @@ public class CreateCourierTest extends BaseScenario {
                 .build();
 
         Response response = sendPostRequest("Вызов метода создания курьера", courier, API_PATH);
-        checkSuccessfulResponse(response);
+        courierStep
+                .checkEasyResponse(response, SC_CREATED, "ok",
+                        true, "Проверка положительного ответа");
     }
 
     @Test
@@ -71,7 +83,10 @@ public class CreateCourierTest extends BaseScenario {
                 .build();
 
         Response response = sendPostRequest("Вызов метода создания курьера", courier, API_PATH);
-        checkFailedResponse(response);
+        courierStep
+                .checkEasyResponse(response, SC_BAD_REQUEST, "message",
+                        FAIL_MESSAGE, "Проверка негативного ответа");
+
     }
 
     @Test
@@ -86,7 +101,10 @@ public class CreateCourierTest extends BaseScenario {
                 .build();
 
         Response response = sendPostRequest("Вызов метода создания курьера", courier, API_PATH);
-        checkFailedResponse(response);
+        courierStep
+                .checkEasyResponse(response, SC_BAD_REQUEST, "message",
+                        FAIL_MESSAGE, "Проверка негативного ответа");
+
     }
 
     @Test
@@ -103,36 +121,9 @@ public class CreateCourierTest extends BaseScenario {
 
         sendPostRequest("Вызов метода создания курьера", courier, API_PATH);
         Response response = sendPostRequest("Вызов метода создания курьера", courier, API_PATH);
-        checkDopplerResponse(response);
-    }
+        courierStep
+                .checkEasyResponse(response, SC_CONFLICT, "message",
+                        CONFLICT_MESSAGE, "Проверка ответа при создании дубля");
 
-    @Step(value = "Проверка положительного ответа")
-    public void checkSuccessfulResponse(Response response) {
-        log.info(response.prettyPrint());
-        logResponseToAllure(response);
-        response.then()
-                .assertThat().body("ok", equalTo(true))
-                .and()
-                .statusCode(SC_CREATED);
-    }
-
-    @Step(value = "Проверка негативного ответа")
-    public void checkFailedResponse(Response response) {
-        log.info(response.prettyPrint());
-        logResponseToAllure(response);
-        response.then()
-                .assertThat().body("message", equalTo(FAIL_MESSAGE))
-                .and()
-                .statusCode(SC_BAD_REQUEST);
-    }
-
-    @Step(value = "Проверка ответа при создании дубля")
-    public void checkDopplerResponse(Response response) {
-        log.info(response.prettyPrint());
-        logResponseToAllure(response);
-        response.then()
-                .assertThat().body("message", equalTo(CONFLICT_MESSAGE))
-                .and()
-                .statusCode(SC_CONFLICT);
     }
 }

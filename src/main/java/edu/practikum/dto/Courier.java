@@ -1,4 +1,4 @@
-package dto;
+package edu.practikum.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
